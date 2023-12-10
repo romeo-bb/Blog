@@ -10,6 +10,7 @@ function App() {
         <Route path="/blogDetails/:id" element={<SingleBlog />} />
         <Route path="/blogList" element={<BlogList />} />
         <Route path="/" element={<BlogList />} />
+        <Route path="*" element={<BlogList to="/" />} />
       </Routes>
     </Router>
   );
